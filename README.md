@@ -45,50 +45,22 @@ I'm a Computer Science graduate based in Bengaluru with hands-on experience buil
 
 ## 🚀 Featured Projects
 
+### 🔗 [GitHub Access Report Service](https://github.com/tejuingalagi/github-access-report)
+Spring Boot REST API that connects to GitHub APIs and generates a structured access report showing which users have access to which repositories and at what level.
+
+- **Features:** Secure PAT authentication · fetch org/user repos · retrieve collaborators · map users → repos with access level (ADMIN / WRITE / READ)
+- **Performance:** Parallel processing using `parallelStream()` — supports 100+ repos and 1000+ users
+- **Stack:** Java 17 · Spring Boot · WebClient · Maven · Swagger
+- **Highlights:** Thread-safe aggregation with `ConcurrentHashMap` · graceful API failure handling · clean layered architecture
+
+---
+
 ### 💰 [Finance Dashboard Backend](https://github.com/tejuingalagi/finance-dashboard-backend)
-Role-based finance backend with full CRUD, filtering, pagination, and dashboard summary APIs.
+Role-based finance backend with full CRUD, filtering, pagination, and dashboard summary APIs simulating a real finance system.
 
-- **Roles:** ADMIN (full access) · ANALYST (view) · VIEWER (restricted)
-- **APIs:** Income/expense records, category-wise totals, monthly & weekly trends, net balance
+- **Roles:** ADMIN (full access) · ANALYST (view records & summary) · VIEWER (restricted)
+- **APIs:** Income/expense records · category-wise totals · monthly & weekly trends · net balance · recent transactions
 - **Stack:** Java 17 · Spring Boot · Spring Data JPA · MySQL · Maven
-- **Highlights:** Centralized exception handling · `@Valid` input validation · layered architecture
-
----
-
-### 🔗 [GitHub Repository Searcher API](https://github.com/tejuingalagi/github-access-report)
-Spring Boot REST API that searches GitHub, persists results in PostgreSQL, and supports filtered retrieval.
-
-- **Features:** Fetch from GitHub Search API · upsert logic (no duplicates) · filter by language/stars · sorting & pagination
-- **Stack:** Java 8 · Spring Boot · Spring Data JPA · PostgreSQL · RestTemplate · JUnit 5 & Mockito
-- **Highlights:** Unit tested (controller + service) · clean error handling · rate limit handling
-
----
-
-### 🌦️ [Weather Information API](https://github.com/tejuingalagi/weather-info-pincode)
-REST API to fetch and cache weather data by Indian pincode and date using OpenWeather API.
-
-- **Features:** Pincode → coordinates via Geocoding API · weather fetch + caching · avoids redundant external calls
-- **Stack:** Java 8 · Spring Boot · Spring Data JPA · PostgreSQL · Maven · Lombok
-- **Highlights:** Cache-first design · graceful external API failure handling · `(pincode, date)` unique constraint
-
----
-
-### 📝 [Blog Management System](https://github.com/tejuingalagi/blog-management-system)
-Secure Blog REST API with JWT authentication and role-based authorization.
-
-- **Stack:** Spring Boot · Spring Security · JWT · MySQL · Swagger
-- **Highlights:** Role-based access · full CRUD · Swagger API docs
-
----
-
-### 🛡️ [FNOL Claim Routing Agent](https://github.com/tejuingalagi/fnol-claim-routing-agent)
-Rule-based insurance claims processing agent that validates and routes FNOL claim data.
-
-- **Routing logic:** Manual review · Investigation flag (fraud keywords) · Specialist queue (injury) · Fast-track (low damage)
-- **Stack:** Core Java (no frameworks) · Eclipse
-- **Output:** Structured JSON with extracted fields, missing fields, route decision, and reasoning
-
----
 
 ## 📊 GitHub Stats
 
